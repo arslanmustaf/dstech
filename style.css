@@ -250,7 +250,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #f5f4f4;
+    background-color: #f1eeee;
 }
 .inDiv{
     width: 28%;
@@ -284,6 +284,7 @@ header{
 }
 .empowerdetail p{
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .empowerdetail button{
     margin-top: 15px;
