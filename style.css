@@ -46,8 +46,12 @@ header {
   border: 2px solid transparent;
   transition: 0.5s;
 }
-.mainUl a:hover,
 .home {
+  padding: 4px;
+  border-bottom: 2px solid #12b98e;
+  color: #12b98e;
+}
+.mainUl a:hover{
   border-bottom: 2px solid #12b98e;
   color: #12b98e;
 }
@@ -131,7 +135,7 @@ header {
 }
 .Headings h1 {
   font-size: 40px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .Headings h2 {
   font-size: 90px;
@@ -289,10 +293,12 @@ header {
 }
 .empowerdetail p{
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .empowerdetail button {
   margin-top: 15px;
 }
+
 
 .valuesSection {
   width: 100vw;
@@ -315,5 +321,60 @@ header {
 .value h2 {
   font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+.estimate{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.estimateDiv{
+ width: 80%;
+ color: #fff;
+ background-color: #12b98e;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin: auto;
+ border-radius: 20px;
+ box-shadow: 0 0 7px #12b98e;
+ padding: 20px;
+}
+.estimateDiv h1 {
+  font-size: 28px;
+}
+.estimateDiv button{
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 25px;
+}
+
+footer{
+  width: 100vw;
+  height: 100vh;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.infoot{
+  width: 28%;
+  height: 70%;
+}
+.infoot
+.footIcon{
+  width: 100%;
+  height: 20%;
+  background: url(logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
