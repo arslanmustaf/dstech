@@ -115,7 +115,7 @@ header {
 }
 .mainContainer {
   width: 100vw;
-  height: 140vh;
+  height: 800px;
   background: url(background.jpg);
   background-color: rgb(246, 247, 252);
   background-position: center center;
@@ -359,7 +359,7 @@ header {
 
 footer{
   width: 100vw;
-  height: 100vh;
+  height: 568px;
 }
 .foot{
   display: flex;
@@ -405,4 +405,27 @@ footer{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+}
+.footDetail{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.footDetail p {
+  width: 70%;
+}
+.linkIcon{
+  width: 30%;
+}
+.linkIcon ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.linkIcon ul li{
+  padding: 6px;
+  color: #635f5f;
 }
