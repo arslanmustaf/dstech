@@ -55,6 +55,13 @@
             </div>
             <input type="text" placeholder="search..">
         </div>
+        <div class="hamburgerDiv">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
     </header>
     <div class="mainContainer">
         <section class="Container">
@@ -155,13 +162,49 @@
             </div>
         </div>
     </section>
-
    <section class="estimate">
     <div class="estimateDiv">
         <h1>Need a Successful Project? let's Start Working Togther!</h1> 
         <button>Estimate Project</button>
     </div>
    </section>
+   <section class="secret">
+    <h1>Secret of Our Work Are Revealed in Blogs</h1>
+    <div class="secretDiv">
+        <div class="inSecret">
+            <img src="web small.webp">
+            <h2>How Can a Website Help a Small Business</h2>
+            <p>Nowadays businesses are fully dependent on a website. A website is now counting as the brand value of any online business. It helps businesses from</p>
+        </div>
+        <div class="inSecret">
+            <img src="webafford.webp">
+            <h2>Affordable Web Design Services in India in 2023</h2>
+            <p>Now every business organization wants to boost their online presence by the help of website but find an affordable web design agency in India is</p>
+        </div>
+        <div class="inSecret">
+            <img src="webecom.webp">
+            <h2>E-Commerce Website Development Company in Bhubaneswar</h2>
+            <p>In this digital world, an online business proved itself more profitable than any offline business. So, now people prefer online businesses to get more conversion</p>
+        </div>
+        <div class="inSecret">
+            <img src="webbest.webp">
+            <h2>Best Web Development Services in Bhubaneswar</h2>
+            <p>Bhubaneswar, also known as the No.1 Smart City in India, and as the capital of Odisha now this city is rapidly growing to become an</p>
+        </div>
+        <div class="inSecret">
+            <img src="webbestecom.webp">
+            <h2>Best E-commerce Website Maintenance Services</h2>
+            <p>If you are looking for best e-commerce website maintenance services in India then DS Tech is one of the best option for you because our</p>
+        </div>
+        <div class="inSecret">
+            <img src="webword.webp">
+            <h2>WordPress Website Maintenance Services in India</h2>
+            <p>If you are searching for best wordpress website maintenance services in India then this article only for you. Here we’ll explain about what are the</p>
+        </div>
+    </div>
+</section>
+
+
    <section class="trust">
     
    </section>
@@ -209,5 +252,11 @@
     </div>
    </footer>
 </body>
-
+<script>
+    let hamburger = document.querySelector('.hamburgerDiv')
+    hamburger.addEventListener('click', () => {
+        let header =document.querySelector('.headerList')
+        header.classList.toggle('active')
+    })
+</script>
 </html>
