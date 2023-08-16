@@ -624,3 +624,80 @@ footer {
     width: 45%;
   }
 }
+@media(max-width:768px){
+  .logo{
+    width: 28%;
+  }
+  .Headings{
+    width: 85%;
+  }
+  .Headings h1{
+    font-size: 25px;
+  }
+  .Headings h2{
+    font-size: 70px;
+  }
+  .btns{
+    width: 80%;
+  }
+  .detail{
+    width: 85%;
+  }
+  .detail img{
+    width: 120px;
+  }
+  .detail h3{
+    margin: 12px;
+  }
+  .detail p{
+    font-size: 20px;
+  }
+  .aboutDesigns{
+    width:80%;
+  }
+  .groupImg{
+    width: 85%;
+  }
+  .empowerSec{
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .inDiv{
+    width: 90%;
+  }
+  .divInDiv{
+    margin: 10px;
+  }
+  .empowerdetail{
+    width: 85%;
+  }
+  .empowerdetail p{
+    font-size: 20px;
+    padding: 12px;
+  }
+  .values{
+    flex-direction: column;
+  }
+  .value{
+    margin: 12px;
+  }
+  .estimateDiv{
+    width: 90%;
+    flex-flow: column;
+    text-align: center;
+  }
+  .estimateDiv h1{
+    margin: 8px;
+  }
+  .inSecret{
+    width: 90%;
+  }
+  .foot{
+    flex-wrap: wrap;
+  }
+  .inFoot{
+    width: 90%;
+  }
+}
+@media(ma)
