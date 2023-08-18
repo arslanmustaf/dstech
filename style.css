@@ -360,7 +360,7 @@ header {
 
 .empowerSec {
   width: 100vw;
-  max-height: auto;
+  height: 448px;
   display: flex;
   justify-content: space-around;
   background-color: #f5f4f4;
@@ -404,7 +404,7 @@ header {
 }
 
 .empowerdetail h2 {
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .empowerdetail p {
