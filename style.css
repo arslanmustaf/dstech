@@ -17,15 +17,24 @@ li {
   list-style: none;
 }
 
+
 header {
   width: 100vw;
-  height: 120px;
+  height: 98px;
   position: fixed;
   /* padding: 10px; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #fff;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 8px 1px #635f5f;
+}
+.header.active{
+  height: 392px;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: .5s ease-in-out;
 }
 
 .logo {
@@ -34,14 +43,35 @@ header {
 }
 
 .logo img {
-  width: 85%;
+  width: 190px;
 }
 
 .headerList {
   width: 58%;
   padding: 6px 12px 6px 6px;
 }
+.headerList.active{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  transition: 1s ease-in-out;
+  animation: list .8s ease-in-out;
+}
+@keyframes list {
+  0%{
+    opacity: 0;
+    }
+  100%{
+    opacity: 1;
+  }
+}
 
+.headerList.active .mainUl {
+  flex-direction: column;
+}
+.headerList.active .mainUl li {
+  margin: 10px auto;
+}
 .mainUl {
   display: flex;
   align-items: center;
@@ -57,13 +87,13 @@ header {
 
 .home {
   padding: 4px;
-  border-bottom: 2px solid #12b98e;
-  color: #12b98e;
+  border-bottom: 2px solid #2b1caf;
+  color: #2b1caf;
 }
 
 .mainUl a:hover {
-  border-bottom: 2px solid #12b98e;
-  color: #12b98e;
+  border-bottom: 2px solid #2b1caf;
+  color: #2b1caf;
 }
 
 .mainUl li {
@@ -145,7 +175,7 @@ header {
   float: right;
   width: 50px;
   height: 50px;
-  border: 1px solid #635f5f;
+  border: 1px solid rgb(39, 30, 172);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -155,14 +185,14 @@ header {
 .line {
   width: 70%;
   height: 5px;
-  background-color: #635f5f;
+  background-color: rgb(39, 30, 172);
   margin: -3px;
 }
 
 .mainContainer {
   width: 100vw;
   height: 800px;
-  background: url(background.jpg);
+  background-image: url(background.jpg)  ;
   background-color: rgb(246, 247, 252);
   background-position: center center;
   background-repeat: no-repeat;
@@ -173,6 +203,7 @@ header {
   padding: 4px 20px;
 }
 
+
 /* .Container{
 
 } */
@@ -181,14 +212,19 @@ header {
   margin: 30px 2px 2px 20px;
 }
 
+
 .Headings h1 {
   font-size: 40px;
   font-weight: 300;
+  color: #ffffff;
+  text-shadow:0 0 2px #000;
 }
 
 .Headings h2 {
   font-size: 90px;
-  font-weight: bold;
+  font-weight: bold; 
+  color: #ffffff;
+  text-shadow:0 0 2px #000;
 }
 
 .Headings p {
@@ -324,17 +360,15 @@ header {
 
 .empowerSec {
   width: 100vw;
-  min-height: 678px;
   max-height: auto;
   display: flex;
-  align-items: center;
   justify-content: space-around;
   background-color: #f5f4f4;
 }
 
 .inDiv {
   width: 28%;
-  height: 50%;
+  /* height: 50%; */
   display: flex;
   flex-flow: column;
 }
@@ -431,6 +465,7 @@ header {
 .estimateDiv h1 {
   font-size: 20px;
   font-weight: bold;
+  color: #fff;
 }
 
 .estimateDiv button {
@@ -510,7 +545,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .inFoot {
@@ -556,13 +591,16 @@ footer {
 
 .footIcon {
   width: 100%;
-  height: 20%;
-  background: url(logo.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 25%;
+  background-color: #fcf9f9;
+  box-shadow:0 0 4px 2px #8d8989;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+}
+.footIcon img{
+  width: 180px;
+  padding: 15px;
 }
 
 .footDetail {
@@ -592,6 +630,12 @@ footer {
 }
 
 @media(max-width:1002px) {
+  .logo{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
   .headerList{
     display: none;
   }
@@ -617,20 +661,19 @@ footer {
     margin: 14px;
   }
 
-
   .designs h3{
     font-size: 50px;
   }
 
-
   .inSecret{
     width: 45%;
   }
+  .empowerSec{
+    min-height: 678px;
+    align-items: center;
+    }
 }
 @media(max-width:796px){
-  .logo{
-    width: 35%;
-  }
   .Headings{
     width: 85%;
   }
@@ -663,7 +706,6 @@ footer {
   }
   .empowerSec{
     width: 100vw;
-    height: auto;
     height: auto;
     flex-wrap: wrap;
   }
@@ -705,9 +747,7 @@ footer {
   }
 }
 @media(max-width:542px){
-  .logo{
-    width: 45%;
-  }
+
   .mainContainer{
     height: 948px;
   }
@@ -738,11 +778,8 @@ footer {
   header{
     height: 90px;
   }
-  .logo{
-    width: 80%;
-  }
   .logo img{
-    width: 95%;
+    width: 160px;
   }
   .hamburger{
     width: 42px;
