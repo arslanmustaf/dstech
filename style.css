@@ -193,7 +193,7 @@ header {
 .mainContainer {
   width: 100vw;
   height: 800px;
-  background-image: url(background.jpg)  ;
+  background-image: url(./assets/background.jpg)  ;
   background-color: rgb(246, 247, 252);
   background-position: center center;
   background-repeat: no-repeat;
