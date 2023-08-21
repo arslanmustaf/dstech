@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="This page is created by Muhammad Arslan">
-    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
     <title>Devsinn | By Arslan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/769b6db16b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,8 +25,8 @@
         </div>
         <div class="headerList">
             <ul class="mainUl">
-                <li class="home"><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li class="activePage"><a href="">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li>Services <i class="fa-solid fa-caret-down"></i>
                     <ul>
                         <li>Domain</li>
@@ -38,7 +38,7 @@
                         <li>Graphic Designing</li>
                     </ul>
                 </li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li>Product <i class="fa-solid fa-caret-down"></i>
                     <ul>
                         <li>Google Workspace</li>
@@ -253,13 +253,5 @@
     </div>
    </footer>
 </body>
-<script>
-    let hamburger = document.querySelector('.hamburgerDiv')
-    hamburger.addEventListener('click', () => {
-        let header =document.querySelector('.header')
-        header.classList.toggle('active')
-        let headerBtn =document.querySelector('.headerList')
-        headerBtn.classList.toggle('active')
-    })
-</script>
+<script src="script.js"></script>
 </html>
