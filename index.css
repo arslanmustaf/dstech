@@ -5,6 +5,11 @@
   font-family: "Montserrat", "poppins", "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
+:root{
+  --primary:#1a8bf5;
+  --secondary:#14dba9;
+  --textColor:#fff;
+}
 
 body {
   overflow-x: hidden;
@@ -17,6 +22,15 @@ li {
   text-decoration: none;
   list-style: none;
 }
+.whatsapp{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50px;
+  top: 90vh;
+  left: 80vw;
+}
 .main{
   position: absolute;
   margin-top:80px ;
@@ -24,13 +38,14 @@ li {
 
 header {
   width: 100vw;
-  height: 98px;
-  position: fixed;
-  /* padding: 10px; */
+  height: 90px;
+  position: absolute;
+  opacity: 80%;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #0537bebe;
   transition: .5s ease-in-out;
   box-shadow: 0 0 8px 1px #635f5f;
 }
@@ -51,7 +66,7 @@ header {
 }
 
 .headerList {
-  width: 62%;
+  width: 45%;
   padding: 6px 12px 6px 6px;
 }
 .headerList.active{
@@ -81,29 +96,30 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
+.mainUl li {
+  transition: 0.8s;
+  /* color: #fff; */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 .mainUl a {
   padding: 4px;
-  color: unset;
+  color: #fff ;
   border: 2px solid transparent;
   transition: 0.5s;
 }
 
 .activePage {
   padding: 4px;
-  border-bottom: 2px solid #2b1caf;
-  color: #2b1caf;
+  border-bottom: 2px solid #1a8bf5;
+  color: #1a8bf5;
 }
 
 .mainUl a:hover {
-  border-bottom: 2px solid #2b1caf;
-  color: #2b1caf;
+  border-bottom: 2px solid #1a8bf5;
+  color: #1a8bf5;
 }
 
-.mainUl li {
-  transition: 0.8s;
-
-}
 
 .mainUl li:hover ul {
 
@@ -117,7 +133,7 @@ header {
   border-radius: 20px;
   box-shadow: 0 0 7px #d1c7c7;
   width: max-content;
-  background-color: white;
+  background-color: #fff;
   position: absolute;
   margin-top: 15px;
   opacity: 0;
@@ -132,7 +148,7 @@ header {
 }
 
 .mainUl ul li:hover {
-  color: #12b98e;
+  color: var(--secondary);
   border-bottom: 1px solid #d1c7c742;
 }
 
@@ -162,6 +178,7 @@ header {
   outline: none;
   border: transparent;
   padding: 4px;
+  background-color: transparent;
   color: rgba(57, 53, 61, 0.72);
 }
 
@@ -179,7 +196,7 @@ header {
   float: right;
   width: 42px;
   height: 42px;
-  border: 1px solid rgb(39, 30, 172);
+  border: 1px solid var(--primary);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -189,7 +206,7 @@ header {
 .line {
   width: 70%;
   height: 5px;
-  background-color: rgb(39, 30, 172);
+  background-color: var(--primary);
   margin: -3px;
   position: relative;
   transition: .3s;
@@ -212,7 +229,8 @@ header {
 .mainContainer {
   width: 100vw;
   height: 800px;
-  background-image: url(./assets/background.jpg)  ;
+  /* background-image: url(./assets/background4.jpg); */
+  background:linear-gradient(118deg,#2287e3,#079572);
   background-color: rgb(246, 247, 252);
   background-position: center center;
   background-repeat: no-repeat;
@@ -221,14 +239,27 @@ header {
   align-items: center;
   justify-content: center;
   padding: 4px 20px;
+  /* position: relative; */
 }
 
+.mainContainer::before{
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 800px;
+  /* background:linear-gradient(118deg,#2287e3,#079572); */
+  opacity: 15%;
+}
 
-/* .Container{
-
-} */
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
 .Headings {
-  width: 60%;
+  position: relative;
+  width: 50%;
   margin: 30px 2px 2px 20px;
 }
 
@@ -236,34 +267,37 @@ header {
 .Headings h1 {
   font-size: 40px;
   font-weight: 300;
-  color: #ffffff;
-  text-shadow:0 0 2px #000;
+  color: var(--textColor);
+  text-shadow:0 0 6px #fff;
 }
 
 .Headings h2 {
   font-size: 90px;
   font-weight: bold; 
-  color: #ffffff;
-  text-shadow:0 0 2px #000;
+  color: #010824;
+  text-shadow:0 0 6px #fff;
 }
 
 .Headings p {
   font-size: 20px;
   letter-spacing: 1px;
+  line-height: 2rem;
   padding: 7px 20px;
+  color: var(--textColor);
+  text-shadow:0 0 2px #fff;
 }
 
 .btns {
-  padding: 8px;
-  width: 62%;
+  padding: 10px 4px;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .portfolioBtn {
   font-size: 18px;
-  padding: 6px 14px;
-  background-color: #12b98e;
+  padding: 12px 16px;
+  background-color: #05335e;
   color: #fff;
   border-radius: 30px;
   border: transparent;
@@ -274,7 +308,7 @@ header {
 .portfolioBtn:hover,
 .read:hover {
   background-color: #000;
-  color: #12b98e;
+  color: var(--primary);
 }
 
 .contactBtn {
@@ -290,8 +324,15 @@ header {
 .contactBtn:hover {
   color: #12b98e;
 }
+.imagee{
+  width: 50%;
+}
+.imagee img{
+  width: 65%;
+}
 
 .detailDiv {
+  position: relative;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -772,7 +813,7 @@ footer {
 }
 @media(max-width:542px){
 
-  .mainContainer{
+  .mainContainer,.mainContainer::before{
     height: 948px;
   }
   .Headings{
