@@ -13,8 +13,8 @@
 <body>
     <div class="whatsapp"></div>
     <header class="header">
-        <div class="logo"> 
-            <a href="#"><img src="./assets/logo.png"></a>
+        <nav> <div class="logo"> 
+            <div class="log"><a href="index.html"><img src="./assets/logo.png"></a></div>
             <div class="hamburgerDiv">
                 <div class="hamburger">
                     <div class="line"></div>
@@ -22,45 +22,29 @@
                     <div class="line"></div>
                 </div>
             </div>
-        </div>
+        </div></nav>
         <div class="headerList">
             <ul class="mainUl">
-                <li ><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li>Services <i class="fa-solid fa-caret-down"></i>
+                <li><a href="services.html">Services <i class="fa-solid fa-caret-down"></i></a>
                     <ul>
-                        <li>Domain</li>
-                        <li>Hosting</li>
-                        <li>Website Development</li>
-                        <li>App Development</li>
-                        <li>Digital marketing</li>
-                        <li>Website Maintenance</li>
-                        <li>Graphic Designing</li>
+                        <a href=""><li>Domain</li></a>
+                        <a href=""><li>Hosting</li></a>
+                        <a href="webdev.html"><li>Website Development</li></a>
+                        <a href=""><li>App Development</li></a>
+                        <a href=""><li>Digital marketing</li></a>
+                        <a href=""><li>Website Maintenance</li></a>
+                        <a href=""><li>Graphic Designing</li></a>
                     </ul>
                 </li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li>Product <i class="fa-solid fa-caret-down"></i>
+                <li><a href="contact.html">Contact us <i class="fa-solid fa-caret-down"></i></a>
                     <ul>
-                        <li>Google Workspace</li>
-                        <li>Azure Account</li>
-                        <li>AWS Account</li>
-                        <li>Canva Pro</li>
-                        <li>RDP</li>
-                    </ul>
-                </li>
-                <li><a href="">Blogs</a></li>
-                <li ><a href="contact.html">Contact us <i class="fa-solid fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="#">Career</a></li>
+                        <li class="activePage"><a href="career.html">Career</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
-        <div class="searchBar">
-            <div class="imgDiv">
-                <img src="./assets/search.png">
-            </div>
-            <input type="text" placeholder="search..">
         </div>
     </header>
 
@@ -119,16 +103,23 @@
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <input type="number" placeholder="Phone" required>
-            <select name="fields" class="fields" required>
-                <option selected>Select</option>
-                <option value="Web Design">Web Design</option>
-                <option value="Web Development">Web Development</option>
-                <option value="App Development">App Development</option>
-                <option value="Graphic Design">Graphic Design</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Website Maintenence">Website Maintenence</option>
-            </select>
-            <input type="text" id="query" class="query" placeholder="query" required>
+            <div class="input">
+                <select name="fields" class="fields" required>
+                    <option selected>Select Services</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Website Maintenence">Website Maintenence</option>
+                </select>
+            </div>
+            <div class="cv">
+                <!-- <label for="">Upload Your CV</label>
+            <input class="upload" type="file"> -->
+                <label for="cv">Choose a CV file:</label>
+                <input type="file" class="upload" name="cv" accept=".pdf, .jpg, .jpeg, .docx">
+            </div>
             <button>Connect with Dev's Inn Today!</button>
         </form>
     </div>
@@ -144,35 +135,31 @@
             <div class="inFoot">
                 <h2>Useful Link</h2>
                 <ul>
-                    <li>FAQ</li>
-                    <li>Privacy Policy</li>
-                    <li>Term and Condition</li>
-                    <li>Support</li>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="term.html">Term & Conditions</a></li>
+                    <li><a href="support.html">Support</a></li>
                 </ul>
             </div>
             <div class="inFoot">
                 <h2>Contact Us</h2>
                 <ul class="address">
-                   <li><i class="fa-solid fa-location-dot"></i>  Plot No-A2, Nirmalyanagara, Near Golakhpuri Duplex, Patia, Bhubaneswar, Odisha 751024 </li>
-                    <li><i class="fa-solid fa-phone"></i>  8249927042</li>
-                    <li><i class="fa-solid fa-envelope"></i>  support@dstechsales.com </li>
+                   <li><i class="fa-solid fa-location-dot"></i> Brainy and bright academy, House #14b butt street, Kalyar Rd, Lahore</li>
+                    <li><i class="fa-solid fa-phone"></i>  0300 0000000</li>
+                    <li><i class="fa-solid fa-envelope"></i>  support@Devsinn.com </li>
                 </ul>
             </div>
         </div>
-        <div class="googlePartner">
-            <img src="./assets/googlePartner.svg">
-        </div>
         <div class="footIcon">
-            <img src="./assets/logo.png">
            <div class="footDetail">
             <p>&copy; 2023 Dev's Inn. All Rights Reserved.</p> 
             <div class="linkIcon">
                 <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-whatsapp"></i></li></ul>
+                    <li><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a></i></li>
+                    <li><a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></li></a></ul>
             </div>
         </div>
         </div>

@@ -6,7 +6,8 @@
     height: 462px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 8px 4.2em;
 }
 .heading {
     width: 50%;
@@ -14,6 +15,7 @@
 }
 
 .heading h1 {
+    color: var(--primary);
     font-size: 56px;
     font-weight: 600;
 }
@@ -32,6 +34,12 @@
 }
 .imgDiv img{
     border-radius: 50px;
+    width: 100%;
+    transition: .2s;
+}
+.imgDiv img:hover{
+    opacity: 70%;
+
 }
 .slider{
     width: 100vw;
