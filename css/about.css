@@ -162,12 +162,35 @@
 }
 @media(max-width:796px){
     .aboutContainer {
-        height: 342px;
+        height: 600px;
         background-position: 100%;
     }
     .aboutCards{
         width: 94%;
         align-items: center;
         justify-content: space-evenly;
+    }
+}
+@media (max-width: 796px){
+    .heading h1 {
+        font-size: 46px;
+    }
+}
+@media (max-width: 652px){
+    .aboutContainer{
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+    }
+    .heading{
+        width: 100%;
+    }
+    .creativeDiv{
+        padding: 2em;
+    }
+}
+@media (max-width: 562px){
+    .heading h1{
+        font-size: 38px;
     }
 }
