@@ -132,3 +132,21 @@
         width: 100%;
     }
 }
+@media (max-width: 390px){
+    .heading h1{
+        font-size: 36px;
+    }
+    .features{
+        width: 100%;
+        height: fit-content;
+    }
+    .features ul li{
+        margin: 16px 0;
+    }
+}
+@media (max-width: 338px){
+    .creativeDiv {
+        padding: 1em;
+    }
+
+}

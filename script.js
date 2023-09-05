@@ -1,3 +1,7 @@
+document.addEventListener("contextmenu",(e)=>{
+    e.preventDefault();
+  }, false);
+
 let hamburger = document.querySelector('.hamburgerDiv')
     hamburger.addEventListener('click', () => {
         let header =document.querySelector('.header')
