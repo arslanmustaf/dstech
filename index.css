@@ -1107,14 +1107,18 @@ footer::before {
   }
 
   .btns {
-    width: 90%;
+    width: 100%;
     flex-flow: column;
+    align-items: center;
   }
 
   .btns button {
     width: fit-content;
     margin: 12px auto;
     padding: 12px 16px;
+  }
+  .portfolioBtn{
+    margin-bottom: 1em;
   }
 
   .hamburger {
